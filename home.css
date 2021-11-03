@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0%;
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    border: 2px solid black;
+    background:linear-gradient(rgb(24, 68, 97),rgb(42, 81, 97));
+}
+.navbar li{
+    list-style: none;
+    margin: 20px 40px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer;
+}
+
+
+.news-pdf{
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #a6bdcf;
+  padding: 20px;
+  height: 300px;
+  
+}
+.symptoms{
+    height: 430px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.symptoms h2{
+    text-align: center;
+    margin: 2px auto;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.symptoms img{
+    object-fit: cover;
+    height: 380px;
+    width: 60%;
+    
+}
+
+.social-media{
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(rgb(27, 27, 27),rgba(55,55,55));
+}
+.social-media h1{
+    text-align: center;
+   padding: 10px 0px;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+}
+.social-container{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.social-hub {
+    display: flex;
+    flex-direction: column;
+}
+.social-hub a{
+    text-decoration: none;
+    margin: 10px 15px ;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer;
+}
+.social-hub img{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+}
+
+
+/* dark mode button */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    
+}
+#darkmode{
+    cursor: pointer;
+      
+      width: 110px;
+      height: 25px;
+      border-radius: 50px;
+      font-family: 'Noto Sans', sans-serif;
+  }
+ 

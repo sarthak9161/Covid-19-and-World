@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    .happy-container{
+        width: 60%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .happy-hub{
+        margin: 10px;
+    }
+    .happy-hub p{
+        margin-top: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .happy-hub h2{
+        font-family: 'Roboto', sans-serif;
+    }
+    .happy-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 420px;
+        margin-top: 30px;
+    }
+    .happy-img img{
+        object-fit: cover;
+        height: 390px;
+        width: 400px;
+        margin:10px 20px ;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/covid_tracker.html">Covid Tracker</a></li>
+        <li><a href="/slots.html">Check Vaccine Slots</a></li>
+        <li><a href="/prevention.html">Preventions</a></li>
+        <li><a href="/stayhappy.html">Stay Happy</a></li>
+        <button id="darkmode" onclick="myFunction()">Dark mode</button>
+    </div>
+  
+    <div class="happy-img">
+        <img src="happy1.png" alt="">
+        <img src="happy2.jpg" alt="">
+        <img src="happy3.jpg" alt="">
+    </div>
+        <div class="happy-container">
+            <div class="happy-hub">
+                <h2>1. Distract yourself.</h2>
+                <p>It’s easy to run over and over the topic that’s stressing us out, whether that’s the new coronavirus outbreak, the state of the climate or something else. But stopping people from ruminating on a recent stressful event – by offering a distraction – can lower their blood pressure back to normal levels quicker than offering no distraction.</p>
+            </div>
+            <div class="happy-hub">
+                <h2>2. If you meditate, be aware that it might not work for everyone.</h2>
+                <p>In times like these, many people might find meditation and mindfulness helpful. But others might not – for precisely the reason above. For some people, practicing stillness might simply invite rumination. It can be difficult not to think about stressful events when trying to clear our minds. This may be why evidence for the benefits of mindfulness and meditation is patchy. For those people, a more compelling distraction than meditation might be required.</p>
+            </div>
+            <div class="happy-hub">
+                <h2>3. Don’t obsess over being positive or happy.</h2>
+                <p>In times like these, many people might find meditation and mindfulness helpful. But others might not – for precisely the reason above. For some people, practicing stillness might simply invite rumination. It can be difficult not to think about stressful events when trying to clear our minds. This may be why evidence for the benefits of mindfulness and meditation is patchy. For those people, a more compelling distraction than meditation might be required.This one may seem counterintuitive: it can be a bad idea to chase positive emotions. Actively pursuing happiness can lead to the reverse effect. For one thing, the more we focus on our own happiness, the less we focus on the happiness of the people around us, which has been shown to contribute to feelings of isolation and disconnection. There is also a link between searching for happiness and feeling that time is slipping away. <br> And again, if you’re focused on an outcome like “I must feel happy”, you may feel worse about yourself if you don’t succeed – even though it’s perfectly natural to have a more difficult time feeling happy in stressful times.</p>
+            </div>
+    </div>
+
+
+    <footer class="footer">&copy Copyright 2021 Nashik, India | All Rights Reserved </footer>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+</body>
+</html>

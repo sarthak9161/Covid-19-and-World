@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="home.css">
+    <title>Corona Virus case mapping on World-map</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    #map {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    body {
+        background-color: rgb(32, 31, 31);
+    }
+
+    .box h1 {
+        position: relative;
+        display: flex;
+        font-family: 'Source Sans Pro', sans-serif;
+        justify-content: center;
+        align-items: center;
+        max-width: 50vw;
+        height: 60px;
+        color: rgb(179, 171, 171);
+        background-color: rgb(41, 40, 40);
+        animation-name: head;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+
+    @keyframes head {
+        from {
+            transform: translateXs(0%);
+
+        }
+
+        to {
+            transform: translateX(105vw);
+        }
+
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/covid_tracker.html">Covid Tracker</a></li>
+        <li><a href="/slots.html">Check Vaccine Slots</a></li>
+        <li><a href="/prevention.html">Preventions</a></li>
+        <button id="darkmode" onclick="myFunction()">Dark mode</button>
+    </div>
+    <div class="box">
+
+        <h1>Corona Virus Cases Mapping with real-time Data</h1>
+    </div>
+
+    <div id='map'></div>
+
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script src="covid_tracker.js"></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2FydGhhazE2IiwiYSI6ImNrcWR5dmNlcTBhMDUybnNjcnVvNzhzZnEifQ.kNvaW8YMaI2LpoORrZXLUg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 1
+    });
+
+
+
+</script>
+<script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+
+</html>

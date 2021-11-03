@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    body{
+        background: -webkit-gradient(linear, left top, right top, from(#0F2027), color-stop(#203A43), to(#2C5364));
+  background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px ;
+        height: 300px;
+    }
+    .back-image{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .back-image img{
+        height: 460px;
+        width: 30%;
+       object-fit: cover;
+       margin: 10px 40px;
+    }
+    .headline{
+        height: 450px;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        /* border: 2px solid black;
+        background-color: rgb(161, 234, 236); */
+        margin-top: 10px;
+        padding: 15px 0;
+        overflow-y: hidden;
+    }
+    .headline img{
+        height: 400px;
+        width: 50%;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .headline h1{
+        text-align: center;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        color: white;
+        overflow: hidden;
+    }
+    .mask{
+        height: 200px;
+        width: 60%;
+        margin: 10px 20px;
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+        /* border: 2px solid black; */
+        padding: 20px;
+        color: white;
+    }
+    .content p{
+        font-family: 'Roboto', sans-serif;
+    }  
+    .content h1{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 5px;
+    }
+    .ideas{
+        height: 215px;
+        width: 65%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 2px solid black; */
+        padding: 30px;
+        color: white;
+        overflow-y: hidden;
+    }
+    .ideas h1{
+        margin-top: 10px;
+        overflow-y: hidden;
+    }
+    .ideas p{
+        overflow-y: hidden;
+    }
+   
+</style>
+<body>
+    <div class="navbar">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/covid_tracker.html">Covid Tracker</a></li>
+        <li><a href="/slots.html">Check Vaccine Slots</a></li>
+        <li><a href="/prevention.html">Preventions</a></li>
+        <li><a href="/stayhappy.html">Stay Happy</a></li>
+        <button id="darkmode" onclick="myFunction()">Dark mode</button>
+    </div>
+    <div class="headline">
+        <h1>How to Prevent the Spread of Coronavirus(Covid-19)</h1>
+        <img src="prev2.jpg" alt="">
+    </div>
+    
+
+        <div class="back-image">
+            <img src="prev.jpg" alt="">
+            <img src="preven3.jpg" alt="">
+        </div>
+    
+    <div class="content">
+        <div class="mask">
+            <h1>Wear Mask Properly</h1>
+            <p>Make sure your mask covers your nose, mouth and chin. <br>
+                Clean your hands before you put your mask on, before and after you take it off, and after you touch it at any time. <br>
+                When you take off your mask, store it in a clean plastic bag, and every day either wash it if it’s a fabric mask or dispose of it in a trash bin if it’s a medical mask. <br>
+                Don’t use masks with valves.</p>
+        </div>
+        <div class="ideas">
+            <h1>Keep yourself and others safe: <br> Do it all!</h1>
+            <p>
+            Get vaccinated as soon as it’s your turn and follow local guidance on vaccination. <br>
+            Keep physical distance of at least 1 metre from others, even if they don’t appear to be sick. Avoid crowds and close contact. <br>
+            Wear a properly fitted mask when physical distancing is not possible and in poorly ventilated settings. <br>
+            Clean your hands frequently with alcohol-based hand rub or soap and water. <br>
+            If you develop symptoms or test positive for COVID-19, self-isolate until you recover.</p>
+        </div>
+
+    </div>
+    <footer class="footer">&copy Copyright 2021 Nashik, India | All Rights Reserved </footer>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+</body>
+</html>
